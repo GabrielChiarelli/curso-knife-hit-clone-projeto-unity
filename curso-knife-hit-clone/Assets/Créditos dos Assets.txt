@@ -1,0 +1,28 @@
+| Fonte |
+
+"Balsamiq Sans" por Michael Angeles: https://fonts.google.com/specimen/Balsamiq+Sans
+
+| Gráficos |
+
+alvo (contém alterações)
+Nome original: "target_red2" | "Shooting Gallery" por Kenney: https://kenney.nl/assets/shooting-gallery
+
+espada (contém alterações)
+Nome original: "item_sword" | "Scribble Platformer" por Kenney: https://kenney.nl/assets/scribble-platformer
+
+| Sons |
+
+derrota
+Nome original: "end-game-fail" | Por davidbain: https://freesound.org/people/davidbain/sounds/135831/
+
+impacto-alvo
+Nome original: "impactWood_light_001" | "Impact Sounds" por Kenney: https://kenney.nl/assets/impact-sounds
+
+impacto-espada
+Nome original: "impactMetal_heavy_000" | "Impact Sounds" por Kenney: https://kenney.nl/assets/impact-sounds
+
+vitoria
+Nome original: "powerupsuccess" | Por GabrielAraujo: https://freesound.org/people/GabrielAraujo/
+
+
+V1.0 - 09/05/2024
