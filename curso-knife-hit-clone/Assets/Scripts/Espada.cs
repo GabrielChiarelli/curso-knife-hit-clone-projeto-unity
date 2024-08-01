@@ -47,11 +47,15 @@ public class Espada : MonoBehaviour
                 oRigidbody2D.gravityScale = 0f;
                 oRigidbody2D.bodyType = RigidbodyType2D.Static;
                 transform.SetParent(collisionInfo.gameObject.transform);
+
+                GameManager.Instance.QuandoAtingirAlvo();
             }
             // Se colidir com outra espada: zera sua velocidade
             else if (collisionInfo.gameObject.GetComponent<Espada>() != null)
             {
                 oRigidbody2D.velocity = Vector2.zero;
+
+                GameManager.Instance.QuandoAtingirEspada();
             }
 
             foiLancada = true;
