@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
 
     public void QuandoAtingirAlvo()
     {
+        UIManager.Instance.AtualizarImagemDaEspada(espadaAtual);
+
         espadasDisponiveis--;
         espadaAtual++;
 

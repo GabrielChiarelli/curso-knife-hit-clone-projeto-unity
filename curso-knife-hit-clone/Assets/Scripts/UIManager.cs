@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -32,5 +33,11 @@ public class UIManager : MonoBehaviour
         {
             Instantiate(imagemDaEspada, painelDasEspadas.transform);
         }
+    }
+
+    public void AtualizarImagemDaEspada(int espadaAtual)
+    {
+        // Deixa preta a imagem da espada que foi lançada
+        painelDasEspadas.transform.GetChild(espadaAtual).GetComponent<Image>().color = Color.black;
     }
 }
