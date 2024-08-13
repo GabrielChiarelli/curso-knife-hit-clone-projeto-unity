@@ -858,6 +858,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   painelDasEspadas: {fileID: 920593417}
   imagemDaEspada: {fileID: 8849520264029916349, guid: 5b83c5f0f6f7d53469cda57229836b14, type: 3}
+  painelFinal: {fileID: 2012040412}
+  textoDoResultado: {fileID: 1233038506}
 --- !u!4 &1299730551
 Transform:
   m_ObjectHideFlags: 0
@@ -904,6 +906,7 @@ MonoBehaviour:
   espadasDisponiveis: 7
   espadaParaSpawnar: {fileID: 7473349927228672940, guid: e3bc46b76a4b2294dbc07a40fd4edc72, type: 3}
   posicaoInicialDaEspada: {x: 0, y: -2.5}
+  tempoParaAtivarPainelFinal: 2
 --- !u!4 &1902351964
 Transform:
   m_ObjectHideFlags: 0
