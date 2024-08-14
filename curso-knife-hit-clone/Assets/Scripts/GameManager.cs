@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject espadaParaSpawnar;
     [SerializeField] private Vector2 posicaoInicialDaEspada = new Vector2(0f, -2.5f);
 
+    [Header("Game Over")]
     [SerializeField] private float tempoParaAtivarPainelFinal = 2f;
 
     private void Awake()

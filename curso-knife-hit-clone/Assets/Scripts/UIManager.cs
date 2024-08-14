@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
+    [Header("UI das Espadas")]
     [SerializeField] private GameObject painelDasEspadas;
     [SerializeField] private GameObject imagemDaEspada;
 
+    [Header("UI do Painel Final")]
     [SerializeField] private GameObject painelFinal;
     [SerializeField] private Text textoDoResultado;
 
@@ -56,5 +59,16 @@ public class UIManager : MonoBehaviour
         }
 
         painelFinal.SetActive(true);
+    }
+
+    public void ReiniciarPartida()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void SairDoJogo()
+    {
+        Debug.Log("Saiu do jogo");
+        Application.Quit();
     }
 }
