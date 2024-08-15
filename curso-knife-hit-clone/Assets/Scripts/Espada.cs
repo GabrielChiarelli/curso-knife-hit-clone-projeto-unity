@@ -49,6 +49,7 @@ public class Espada : MonoBehaviour
                 transform.SetParent(collisionInfo.gameObject.transform);
 
                 GameManager.Instance.QuandoAtingirAlvo();
+                AudioManager.Instance.impactoAlvo.Play();
             }
             // Se colidir com outra espada: zera sua velocidade
             else if (collisionInfo.gameObject.GetComponent<Espada>() != null)
@@ -56,6 +57,7 @@ public class Espada : MonoBehaviour
                 oRigidbody2D.velocity = Vector2.zero;
 
                 GameManager.Instance.QuandoAtingirEspada();
+                AudioManager.Instance.impactoEspada.Play();
             }
 
             foiLancada = true;

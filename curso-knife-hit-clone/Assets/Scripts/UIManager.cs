@@ -52,10 +52,12 @@ public class UIManager : MonoBehaviour
         if (venceu)
         {
             textoDoResultado.text = "VITÓRIA";
+            AudioManager.Instance.vitoria.Play();
         }
         else
         {
             textoDoResultado.text = "GAME OVER";
+            AudioManager.Instance.derrota.Play();
         }
 
         painelFinal.SetActive(true);
