@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
 
     [Header("UI das Espadas")]
     [SerializeField] private GameObject painelDasEspadas;
-    [SerializeField] private GameObject imagemDaEspada;
+    [SerializeField] private GameObject iconeDaEspada;
 
     [Header("UI do Painel Final")]
     [SerializeField] private GameObject painelFinal;
@@ -33,15 +33,15 @@ public class UIManager : MonoBehaviour
         painelFinal.SetActive(false);
     }
 
-    public void CarregarImagensDasEspadas(int espadasDisponiveis)
+    public void CarregarIconesDasEspadas(int espadasDisponiveis)
     {
         for (int i = 0; i < espadasDisponiveis; i++)
         {
-            Instantiate(imagemDaEspada, painelDasEspadas.transform);
+            Instantiate(iconeDaEspada, painelDasEspadas.transform);
         }
     }
 
-    public void AtualizarImagemDaEspada(int espadaAtual)
+    public void AtualizarIconeDaEspada(int espadaAtual)
     {
         // Deixa preta a imagem da espada que foi lançada
         painelDasEspadas.transform.GetChild(espadaAtual).GetComponent<Image>().color = Color.black;
